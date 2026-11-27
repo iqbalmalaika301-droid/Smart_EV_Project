@@ -12,7 +12,7 @@ def load_users():
             users.append(row)
     return users 
 def save_vehicle(vehicle):
-    with open("vehicle.csv","a",newline="")as file:
+    with open("vehicles.csv","a",newline="")as file:
         writer=csv.writer(file)
         writer.writerow(vehicle)
 def load_vehicles():
